@@ -1,6 +1,6 @@
 package CGI::Application::Plugin::DevPopup::Params;
 
-# $Id: Params.pm 13 2009-12-04 11:16:01Z stro $
+# $Id: Params.pm 15 2009-12-07 10:52:17Z stro $
 
 use strict;
 use warnings;
@@ -8,7 +8,7 @@ use warnings;
 use base qw/Exporter/;
 use Data::Dumper;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 sub import {
     my $c = scalar caller;
@@ -60,9 +60,19 @@ CGI::Application::Plugin::DevPopup::Params - show CGI::Application parameters in
     The rest of your application follows
     ...
 
+=head1 DESCRIPTION
+
+This module is a plugin for L<CGI::Application::Plugin::DevPopup>.
+Whenever used, it creates a "Params" section in the DevPopup output. This
+section contains a list of CGI::Application parameters set by "param"
+method. Internal DevPopup parameters are omitted from output, since it's
+unlikely that you need them.
+
+See L<CGI::Application/param()> for parameters description.
+
 =head1 VERSION
 
-1.00
+1.01
 
 =head1 SEE ALSO
 

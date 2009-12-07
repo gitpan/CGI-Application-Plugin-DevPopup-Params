@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               CGI-Application-Plugin-DevPopup-Params
-version:            1.00
+version:            1.01
 abstract:           Show CGI::Application parameters in DevPopup window
 author:
     - Serguei Trouchelle <stro@cpan.org>
